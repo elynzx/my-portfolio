@@ -1,0 +1,43 @@
+@layer utilities {
+    /* Keyframes */
+
+    @keyframes galaxyPulse {
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    }
+
+    @keyframes twinkle {
+        0%,
+        100% {
+            opacity: 0.2;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+
+    /* Utility classes */
+
+    .animate-galaxy {
+        background: radial-gradient(
+            circle at center,
+            #9c395a 0%,
+            #07010c 50%,
+            #0a011a 100%
+        );
+        animation: galaxyPulse 10s ease-in-out infinite;
+    }
+
+    .animate-twinkle {
+        animation: twinkle var(--star-duration, 3s) ease-in-out infinite;
+    }
+}

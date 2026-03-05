@@ -1,12 +1,10 @@
-import { WelcomeBar } from './features/WelcomeBar/index'
-import { FileContainer } from './features/Layout/FileContainer'
+import {StarBackground} from '@/ui/StarBackground'
 
 function App() {
 
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-hidden">
-      <FileContainer />
-      <WelcomeBar />
+      <StarBackground />
     </div>
   )
 }
