@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import bunny1 from '@/assets/Decoration/bunny01.svg'
-import bunny2 from '@/assets/Decoration/bunny02.svg'
+import bunny1 from '@/assets/stickers/bunny01.svg'
+import bunny2 from '@/assets/stickers/bunny02.svg'
 
 export const BunnySticker = () => {
   const [isFirstFrame, setIsFirstFrame] = useState(true)
@@ -17,7 +17,7 @@ export const BunnySticker = () => {
     <img
       src={isFirstFrame ? bunny1 : bunny2}
       alt="Animated bunny"
-      className="w-42 h-42 absolute -top-20 -left-30 z-50 pointer-events-none"
+      className="absolute w-24 h-auto -top-18 md:-top-35 md:left-20 md:w-45 md:h-auto z-20 pointer-events-none"
     />
   )
 }
