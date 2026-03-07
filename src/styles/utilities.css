@@ -1,3 +1,11 @@
-@layer utilities{
-  
+@layer utilities {
+    .tabtext {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .tabtextDesktop {
+        writing-mode: sideways-lr;
+        transform: none;
+    }
 }

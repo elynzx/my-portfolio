@@ -9,6 +9,8 @@
     --font-title: "Source Code Pro", monospace;
 
     /*Base*/
+    --color-DeepGray: #3b3b3b;
+
     --color-darkPink: #f2bdd3;
     --color-darkGray: #535353;
     --color-lightGray: #9e9e9e;
@@ -33,5 +35,4 @@ body {
     background-color: var(--color-bgGray);
     color: var(--color-darkGray);
     font-size: 14px;
-    overflow-x: hidden;
 }
