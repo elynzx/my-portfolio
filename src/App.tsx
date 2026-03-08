@@ -1,13 +1,19 @@
 import { useState, useEffect } from "react";
 import { StarBackground } from '@/ui'
 import { FileLayout } from '@/layout/FileLayout'
+import type { ReactNode } from "react";
+import { Contact } from "./features/Contact";
+
+const TABS_MAP: Record<string, ReactNode> = {
+  contact: <Contact />,
+};
 
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("home");
 
-  let content;
+  const content = TABS_MAP[activeTab] || TABS_MAP.contact;
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2500)
