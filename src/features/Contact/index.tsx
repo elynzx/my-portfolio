@@ -63,7 +63,7 @@ export const Contact = () => {
               />
 
               <div className="flex flex-col">
-                <label className="text-xs md:text-sm font-bold mb-1 ">Message :</label>
+                <label className="text-xs md:text-[16px] font-bold mb-1 ">Message :</label>
                 <Controller
                   name="message"
                   control={control}
@@ -72,7 +72,7 @@ export const Contact = () => {
                     <textarea
                       {...field}
                       rows={3}
-                      className="border-b border-LineDarkPink bg-transparent outline-none text-xs md:text-sm resize-none focus:border-darkPink"
+                      className="border-b border-LineDarkPink bg-transparent outline-none text-xs md:text-[16px] resize-none focus:border-darkPink"
                       placeholder="Tell me about your project..."
                     />
                   )}
