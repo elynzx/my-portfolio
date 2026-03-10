@@ -3,8 +3,10 @@ import { StarBackground } from '@/ui'
 import { FileLayout } from '@/layout/FileLayout'
 import type { ReactNode } from "react";
 import { Contact } from "./features/Contact";
+import { Home } from "./features/Home";
 
 const TABS_MAP: Record<string, ReactNode> = {
+  home: <Home />,
   contact: <Contact />,
 };
 
@@ -13,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("home");
 
-  const content = TABS_MAP[activeTab] || TABS_MAP.contact;
+  const content = TABS_MAP[activeTab] || TABS_MAP.home;
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2500)
