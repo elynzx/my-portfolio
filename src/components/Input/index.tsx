@@ -23,7 +23,7 @@ export const Input = ({
   return (
     <div className="flex flex-col md:items-center md:flex-row">
       {label && (
-        <label htmlFor={name} className="font-bold text-xs md:text-sm md:w-20">
+        <label htmlFor={name} className="font-bold text-xs md:text-[16px] md:w-20">
           {label}
         </label>
       )}
@@ -35,7 +35,7 @@ export const Input = ({
         value={value}
         onChange={e => onChange?.(e.target.value)}
         disabled={disabled}
-        className={`flex-1 text-xs md:text-sm border-b-1 border-LineDarkPink py-1.5 md:px-3 md:py-2 bg-transparent outline-none transition-colors ${error ? 'border-red-500' : ''
+        className={`flex-1 text-xs md:text-[16px] border-b-1 border-LineDarkPink py-1.5 md:px-3 md:py-2 bg-transparent outline-none transition-colors ${error ? 'border-red-500' : ''
           } ${disabled ? 'opacity-60 cursor-not-allowed' : ''}`}
         aria-invalid={!!error}
         aria-describedby={error ? `${name}-error` : undefined}
