@@ -10,18 +10,14 @@
     --font-title: "Source Code Pro", monospace;
 
     /*Base*/
-    --color-DeepGray: #3b3b3b;
-    --color-LineDarkPink: #ffc9de;
-    --color-bgDarkPink: #f2bdd3;
     --color-bgDeepBlack: #222222;
-    /*  */
-    --color-darkGray: #535353;
+    
     --color-lightGray: #9e9e9e;
-
-    --color-bgGray: #f2f2f2;
-    --color-bgPink: #fff3f8;
     --color-bgLightGray: #fafafa;
-    --color-bgDarkGray: #c7c7c7;
+    --color-DeepGray: #3b3b3b;
+    
+    --color-darkPink: #f2bdd3;
+    --color-LineDarkPink: #ffc9de;
 }
 
 :root {
