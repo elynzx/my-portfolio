@@ -5,12 +5,12 @@
 @custom-variant dark (&: where(.dark, .dark *));
 
 @theme {
-    --font-greeting: "Carattere", sans-serif;
     --font-body: "Karla", sans-serif;
     --font-title: "Source Code Pro", monospace;
 
     /*Base*/
     --color-bgDeepBlack: #222222;
+    --color-bgDarkPink: #E8B9C3;
     
     --color-lightGray: #9e9e9e;
     --color-bgLightGray: #fafafa;
