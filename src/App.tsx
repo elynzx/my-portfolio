@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full max-w-full overflow-x-hidden">
+    <div className="w-screen h-screen mx-auto min-h-screen min-w-screen max-w-full overflow-x-hidden">
       <StarBackground />
       <FileLayout
         openFile={activeTab}
