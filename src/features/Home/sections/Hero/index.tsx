@@ -2,7 +2,6 @@ import ProfilePhoto from "@/assets/home/ProfilePhoto/Profile_02.png";
 import HiIcon from "@/assets/home/hi.png";
 import { Badge } from './components/Badge'
 import { FaMedal, FaCertificate, FaUsers, FaReact, FaDocker } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
 import { SiTypescript, SiSpringboot, SiPython } from "react-icons/si";
 import { StackIcon } from './components/StackIcon'
 
@@ -68,7 +67,6 @@ export const Hero = () => {
           alt={"Profile photo of " + about.name}
           className="w-32 h-38 md:w-70 md:h-85 z-10 md:mb-6 object-cover"
         />
-        
         <div className="flex flex-row gap-4 md:gap-7 mt-5 items-center justify-center">
           {techStack.map((tech, idx) => (
             <StackIcon key={idx} icon={tech.icon} />
