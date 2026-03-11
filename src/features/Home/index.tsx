@@ -19,7 +19,7 @@ export const Home = () => {
       <section className="p-6 md:p-12 md:flex-1 w-full ">
         <div
           key={activeSection}
-          className="h-full w-full rounded-xl bg-DeepGray/70 slide-left md:ml-7 md:px-16 md:py-10 ">
+          className="h-full w-full rounded-xl bg-bgDeepBlack/60 slide-left md:ml-7 md:px-16 md:py-10 ">
 
           {/* <ClipDeco /> */}
           <div className="overflow-y-auto no-scrollbar">
