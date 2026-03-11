@@ -20,7 +20,7 @@ export const TabButton = ({ label, isActive, onClick }: Props) => {
         "text-DeepGray tracking-tighter  flex items-center justify-center h-30 w-7 rounded-r-md cursor-pointer border border-gray-200/50 border-r-0",
 
         // Desktop
-        'md:w-58 md:h-14 md:rounded-t-2xl md:border-b-0',
+        'md:w-58 md:h-14 md:rounded-t-2xl md:rounded-b-none md:border-b-0',
 
         // Active state
         isActive
