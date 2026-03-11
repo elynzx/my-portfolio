@@ -60,7 +60,7 @@ export const Hero = () => {
       <img
         src={about.images.profile}
         alt={"Profile photo of " + about.name}
-        className="h-auto w-40 rounded-full md:w-90 z-10 md:mb-6"
+        className="h-auto w-32 rounded-full md:w-90 z-10 md:mb-6"
       />
 
       <div className="flex flex-row gap-4 mt-6 items-center justify-center">
@@ -70,7 +70,7 @@ export const Hero = () => {
       </div>
 
       <div className="flex text-justify items-center flex-col mt-6 gap-2 md:mt-0 md:flex-row md:mb-16">
-        <p className="italic border-l-4 pl-2 text-white md:text-[17px] md:mr-28">{about.description}</p>
+        <p className="italic text-xs border-l-4 pl-2 text-white md:text-[17px] md:mr-28">{about.description}</p>
         <div className="flex flex-col gap-3 mt-4">
           {badges.map((badge, idx) => (
             <Badge key={idx} icon={badge.icon} text={badge.text} />
