@@ -5,7 +5,7 @@ interface Props {
 export const Badge = ({ text
 }: Props) => {
   return (
-    <div className="font-title font-bold border px-3 rounded-full md:text-2xl md:mb-4 ">
+    <div className="text-darkPink text-center bg-darkPink/10 text-xs font-title border border-darkPink/70 px-3 py-1 rounded-full md:text-2xl md:mb-4 ">
       <p>{text}</p>
     </div>
   )
