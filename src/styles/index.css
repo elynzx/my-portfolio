@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import "tailwindcss";
 @import "./utilities.css";
 @import "./animation.css";
 @custom-variant dark (&: where(.dark, .dark *));
