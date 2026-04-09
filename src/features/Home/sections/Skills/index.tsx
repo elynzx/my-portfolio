@@ -1,7 +1,9 @@
-export const Education = () => {
+export const Skills = () => {
+
   return (
     <div>
 
     </div>
+
   )
 }

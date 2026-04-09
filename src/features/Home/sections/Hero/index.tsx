@@ -44,7 +44,7 @@ const techStack = [
 export const Hero = () => {
   return (
     <section
-      className="grid grid-cols-1 gap-6 py-6 px-8 md:grid-cols-2 md:grid-rows-2 md:gap-2 md:px-10 items-center justify-center"
+      className="grid grid-cols-1 gap-4 py-6 px-8 md:grid-cols-2 md:grid-rows-2 md:gap-2 md:px-10 items-center justify-center"
     >
 
       <div className="flex items-center text-xl gap-2 mt-3 md:mt-0 justify-center md:justify-start md:row-start-1 md:col-start-1">
