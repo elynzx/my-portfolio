@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { StarBackground } from '@/ui'
+import { StarBackground } from '@/shared/ui'
 import { FileLayout } from '@/layout/FileLayout'
 import type { ReactNode } from "react";
-import { Contact } from "./features/Contact";
-import { Home } from "./features/Home";
+import { Contact } from "../features/Contact";
+import { Home } from "../features/Home";
 
 const TABS_MAP: Record<string, ReactNode> = {
   home: <Home />,

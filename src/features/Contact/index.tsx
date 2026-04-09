@@ -1,6 +1,6 @@
 import { useForm, Controller } from "react-hook-form";
 import { VALIDATION_RULES } from "../../utils/validations";
-import { Input } from "@/components/Input";
+import { Input } from "@/shared/components/Input";
 import BunnyMail from "@/assets/contact/bunnyMail.png";
 
 interface ContactData {

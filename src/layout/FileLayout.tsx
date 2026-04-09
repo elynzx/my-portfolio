@@ -1,5 +1,5 @@
-import { FileNavigation } from '@/components'
-import { BunnySticker } from '@/ui'
+import { FileNavigation } from '@/shared/components'
+import { BunnySticker } from '@/shared/ui'
 import type { ReactNode } from "react";
 import { useState, useEffect } from "react";
 
