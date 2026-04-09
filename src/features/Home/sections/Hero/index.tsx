@@ -1,7 +1,7 @@
 import ProfilePhoto from "@/assets/home/ProfilePhoto/Profile_02.png";
 import HiIcon from "@/assets/home/hi.png";
 import { Badge } from './components/Badge'
-import { FaMedal, FaCertificate, FaUsers, FaReact, FaDocker } from "react-icons/fa";
+import { FaMedal, FaCertificate, FaReact, FaDocker } from "react-icons/fa";
 import { SiTypescript, SiSpringboot, SiPython } from "react-icons/si";
 import { StackIcon } from './components/StackIcon'
 
@@ -26,10 +26,6 @@ const badges = [
     icon: <FaCertificate />,
     text: "English B2 certified"
   },
-  /*   {
-      icon: <FaUsers />,
-      text: "IEEE WIE volunteer"
-    }, */
 ]
 
 const techStack = [
