@@ -28,7 +28,7 @@ export const Home = () => {
           <ClipDeco />
           <div
 
-            className="h-full ml-14 w-full slide-left md:ml-32 md:px-4 md:py-12 ">
+            className="h-full ml-14 w-full slide-left md:ml-34 md:px-4 md:py-12 ">
             <div className="overflow-y-auto no-scrollbar">
               {section}
             </div>

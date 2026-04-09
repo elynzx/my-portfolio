@@ -75,9 +75,9 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-4 gap-2 md:gap-4 md:mt-14 md:row-start-2 md:col-start-1">
+        <div className="flex flex-col items-center justify-center mt-4 gap-2 md:gap-4 md:mt-8 md:row-start-2 md:col-start-1">
           <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-xl">{about.description}</p>
-          <div className="flex flex-col gap-3 mt-4 md:flex-row md:w-115">
+          <div className="flex flex-col gap-3 mt-4 md:flex-row md:w-115 md:mt-10">
             {badges.map((badge, idx) => (
               <Badge key={idx} icon={badge.icon} text={badge.text} />
             ))}
