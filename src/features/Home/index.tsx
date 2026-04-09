@@ -19,23 +19,25 @@ export const Home = () => {
 
   return (
 
-    <div className="flex h-full w-full md:relative">
-      <aside className="mt-20 ml-3">
-        <Sidebar selected={activeSection} onSelect={setActiveSection} />
-      </aside>
-      <section className="p-6 md:p-12 md:flex-1 w-full">
-        <div
-          key={activeSection}
-          className="h-full w-full rounded-xl bg-bgDeepBlack/60 slide-left ml-5 md:ml-7 md:px-16 md:py-10 ">
+    <div className="flex h-full w-full justify-center items-center md:relative">
+      <div className="flex md:flex-row md:gap-20 p-4 md:px-4 md:py-12 w-full h-full">
+        <aside className="mt-8">
+          <Sidebar selected={activeSection} onSelect={setActiveSection} />
+        </aside>
+        <section key={activeSection} className="w-full flex flex-col items-center justify-center md:mr-8 rounded-2xl h-full bg-bgDeepBlack/60">
           <ClipDeco />
-          <div className="overflow-y-auto no-scrollbar">
-            {section}
+          <div
+
+            className="h-full ml-14 w-full slide-left md:px-6 md:py-10 ">
+            <div className="overflow-y-auto no-scrollbar">
+              {section}
+            </div>
           </div>
-          <div className="px-5">
+          <div className="w-full px-5">
             <Pagination />
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
   )

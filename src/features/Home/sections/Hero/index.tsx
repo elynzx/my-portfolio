@@ -44,44 +44,46 @@ const techStack = [
 export const Hero = () => {
   return (
     <section
-      className="grid grid-cols-1 gap-1 py-8 px-8 md:grid-rows-2 md:gap-16 md:px-12 md:py-0 items-center justify-center"
+      className="flex flex-col py-4 px-6 md:px-12 md:py-0"
     >
-
-      <div className="flex items-center text-xl gap-2 mt-3 md:mt-0 justify-center md:justify-start md:row-start-1">
-        <img
-          src={about.images.hi}
-          alt={"Greeting from " + about.name}
-          className="w-15 md:w-38 jello-vertical"
-        />
-        <div className="flex flex-col">
-          <h2 className="text-lg font-semibold md:text-4xl md:mb-5 text-darkPink">
-            I'm {about.name}
-          </h2>
-          <span className="text-sm font-semibold md:text-4xl">{about.role}</span>
+      <div className="grid grid-cols-1 gap-1 md:grid-rows-2 md:grid-cols-1 md:gap-8 mt-3 md:items-center">
+        
+        <div className="flex items-center text-xl gap-2 mt-3 justify-center md:justify-start md:row-start-1">
+          <img
+            src={about.images.hi}
+            alt={"Greeting from " + about.name}
+            className="w-15 md:w-38 jello-vertical"
+          />
+          <div className="flex flex-col">
+            <h2 className="text-lg font-semibold md:text-4xl md:mb-5 text-darkPink">
+              I'm {about.name}
+            </h2>
+            <span className="text-sm font-semibold md:text-4xl">{about.role}</span>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col items-center justify-center md:row-span-2 md:col-start-2 md:gap-5">
-        <img
-          src={about.images.profile}
-          alt={"Profile photo of " + about.name}
-          className="w-32 h-auto md:w-65 md:h-85 md:mb-4 object-cover"
-        />
-        <div className="flex flex-row gap-4 md:gap-7 mt-5 md:mt-2 items-center justify-center">
-          {techStack.map((tech, idx) => (
-            <StackIcon key={idx} icon={tech.icon} />
-          ))}
+        <div className="flex flex-col items-center justify-center md:row-span-2 md:col-start-2 md:gap-3 md:ml-10">
+          <img
+            src={about.images.profile}
+            alt={"Profile photo of " + about.name}
+            className="w-28 h-auto md:w-60 md:h-80 md:mb-4 object-cover"
+          />
+          <div className="flex flex-row gap-4 md:gap-7 mt-5 md:mt-2 md:mb-6 items-center justify-center">
+            {techStack.map((tech, idx) => (
+              <StackIcon key={idx} icon={tech.icon} />
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col text-justify items-center justify-center mt-4 gap-2 md:gap-12 md:mt-0 md:row-start-2">
-        <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-xl">{about.description}</p>
-        <div className="flex flex-col gap-3 mt-4 md:flex-row md:gap-4">
-          {badges.map((badge, idx) => (
-            <Badge key={idx} icon={badge.icon} text={badge.text} />
-          ))}
+        <div className="flex flex-col text-justify items-center justify-center mt-4 gap-2 md:gap-6 md:row-start-2">
+          <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-xl">{about.description}</p>
+          <div className="flex flex-col gap-3 mt-4 md:flex-row md:gap-4">
+            {badges.map((badge, idx) => (
+              <Badge key={idx} icon={badge.icon} text={badge.text} />
+            ))}
+          </div>
         </div>
-      </div>
+      </div >
     </section>
   );
 };
