@@ -21,7 +21,7 @@ const MENU_ITEMS = [
 export const Sidebar = ({ selected, onSelect }: Props) => {
   return (
     <div
-      className="hidden md:flex md:flex-col md:w-40 items-center md:items-start gap-2 md:gap-2 justify-end md:justify-start"
+      className="hidden md:flex md:flex-col md:w-46 items-center md:items-start gap-2 md:gap-2 justify-end md:justify-start"
     >
       {MENU_ITEMS.map((item) => (
         <SidebarItem

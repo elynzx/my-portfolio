@@ -44,10 +44,10 @@ const techStack = [
 export const Hero = () => {
   return (
     <section
-      className="grid grid-cols-1 gap-4 py-6 px-8 md:grid-cols-2 md:grid-rows-2 md:gap-2 md:px-10 items-center justify-center"
+      className="grid grid-cols-1 gap-1 py-8 px-8 md:grid-rows-2 md:gap-16 md:px-12 md:py-0 items-center justify-center"
     >
 
-      <div className="flex items-center text-xl gap-2 mt-3 md:mt-0 justify-center md:justify-start md:row-start-1 md:col-start-1">
+      <div className="flex items-center text-xl gap-2 mt-3 md:mt-0 justify-center md:justify-start md:row-start-1">
         <img
           src={about.images.hi}
           alt={"Greeting from " + about.name}
@@ -61,20 +61,20 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center md:row-span-2 md:col-start-2">
+      <div className="flex flex-col items-center justify-center md:row-span-2 md:col-start-2 md:gap-5">
         <img
           src={about.images.profile}
           alt={"Profile photo of " + about.name}
-          className="w-32 h-38 md:w-70 md:h-85 z-10 md:mb-6 object-cover"
+          className="w-32 h-auto md:w-65 md:h-85 md:mb-4 object-cover"
         />
-        <div className="flex flex-row gap-4 md:gap-7 mt-5 items-center justify-center">
+        <div className="flex flex-row gap-4 md:gap-7 mt-5 md:mt-2 items-center justify-center">
           {techStack.map((tech, idx) => (
             <StackIcon key={idx} icon={tech.icon} />
           ))}
         </div>
       </div>
 
-      <div className="flex flex-col text-justify items-center justify-center mt-4 gap-2 md:gap-8 md:mt-0 md:row-start-2 md:col-start-1">
+      <div className="flex flex-col text-justify items-center justify-center mt-4 gap-2 md:gap-12 md:mt-0 md:row-start-2">
         <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-xl">{about.description}</p>
         <div className="flex flex-col gap-3 mt-4 md:flex-row md:gap-4">
           {badges.map((badge, idx) => (
