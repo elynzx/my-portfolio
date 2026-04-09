@@ -40,7 +40,7 @@ export const FileLayout = ({
         <div
           className={`
               absolute h-full w-full md:h-162 md:w-330 md:mt-8 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 z-65 md:border border-borderGray/50 shadow-2xl 
-               bg-DeepGray/95 md:rounded-2xl
+               bg-DeepGray/90 md:rounded-2xl
               flex flex-col items-center justify-center
               ${isLoading ? "opacity-100 " : "opacity-0 transition-opacity duration-800 pointer-events-none"} 
             `}

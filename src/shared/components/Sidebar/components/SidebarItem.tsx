@@ -12,7 +12,7 @@ export const SidebarItem = ({ label, isActive, onClick, icon }: Props) => {
       <button
         onClick={onClick}
         className={`
-        flex items-center gap-1 w-full px-8 py-1 rounded-l-xl transition-all duration-200
+        flex items-center gap-3 w-full px-8 py-1 rounded-l-xl transition-all duration-200
         ${isActive
             ? 'font-bold'
             : 'hover:font-bold'} 
