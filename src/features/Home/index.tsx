@@ -24,14 +24,10 @@ export const Home = () => {
         <aside className="mt-8">
           <Sidebar selected={activeSection} onSelect={setActiveSection} />
         </aside>
-        <section key={activeSection} className="w-full flex flex-col items-center justify-center md:mr-8 rounded-2xl h-full bg-bgDeepBlack/65">
+        <section key={activeSection} className="slide-left w-full flex flex-col items-center justify-center md:mr-8 rounded-2xl h-full bg-bgDeepBlack/65">
           <ClipDeco />
-          <div
-
-            className="h-full ml-14 w-full slide-left md:ml-34 md:px-4 md:py-12 ">
-            <div className="overflow-y-auto no-scrollbar">
-              {section}
-            </div>
+          <div className="flex-1 w-full flex flex-col items-center overflow-hidden overflow-y-auto no-scrollbar md:p-8 p-6">
+            {section}
           </div>
           <div className="w-full px-5">
             <Pagination />

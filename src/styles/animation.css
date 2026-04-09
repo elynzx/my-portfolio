@@ -77,12 +77,12 @@
 
     @keyframes slide-left {
         0% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
+            transform: translateX(50px);
+            opacity: 0;
         }
         100% {
-            -webkit-transform: translateX(-28px);
-            transform: translateX(-28px);
+            transform: translateX(0px);
+            opacity: 1;
         }
     }
 
@@ -101,17 +101,6 @@
         }
         to {
             left: var(--star-to, 14.5rem);
-        }
-    }
-
-    @keyframes slide-left {
-        0% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-        }
-        100% {
-            -webkit-transform: translateX(-28px);
-            transform: translateX(-28px);
         }
     }
 
@@ -163,9 +152,6 @@
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
         animation: move-star 3s forwards;
-    }
-    .slide-left {
-        animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
     .bar {
         animation: wave-animation 1s ease-in-out infinite;

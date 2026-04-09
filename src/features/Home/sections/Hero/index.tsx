@@ -7,10 +7,10 @@ import { StackIcon } from './components/StackIcon'
 
 const about = {
   name: "Evelyn",
-  role: "Full Stack Developer",
+  role: "Full Stack Developer Trainee",
   title: "About",
   description:
-    "Building clear, user-centered solutions with a balance of rigor and creativity.",
+    "I turn ideas into systems that feel clear, intuitive, and human — blending creativity from design with the discipline of engineering.",
   images: {
     profile: ProfilePhoto,
     hi: HiIcon,
@@ -39,26 +39,26 @@ const techStack = [
 
 export const Hero = () => {
   return (
-    <section
-      className="flex flex-col items-center justify-center py-4 px-6 md:px-8 md:py-0"
-    >
-      <div className="grid grid-cols-1 gap-1 md:grid-rows-2 md:grid-cols-2">
-        
-        <div className="flex items-center text-xl gap-2 mt-3 md:mt-0 md:w-full justify-center md:justify-start md:row-start-1 md:col-start-1 ">
-          <img
-            src={about.images.hi}
-            alt={"Greeting from " + about.name}
-            className="w-15 md:w-38 jello-vertical"
-          />
-          <div className="flex flex-col ">
-            <h2 className="text-lg font-semibold md:text-3xl md:mb-5 text-darkPink">
-              I'm {about.name}
-            </h2>
-            <span className="text-sm md:text-3xl ">{about.role}</span>
+    <section className="flex flex-col items-center justify-center w-full h-full">
+      <div className="grid grid-cols-1 md:px-12 md:grid-rows-3 md:grid-cols-3 w-full h-full items-center justify-items-center md:justify-items-stretch">
+
+        <div className="col-span-1 flex items-center justify-center md:justify-start md:mt-16 w-full md:col-span-2 md:col-start-1 md:row-span-1">
+          <div className="flex items-center text-xl gap-2 md:justify-start md:items-center">
+            <img
+              src={about.images.hi}
+              alt={"Greeting from " + about.name}
+              className="w-15 md:w-42 jello-vertical"
+            />
+            <div className="flex flex-col ">
+              <h2 className="text-lg font-semibold md:text-3xl md:mb-5 text-darkPink">
+                I'm {about.name}
+              </h2>
+              <span className="text-sm md:text-2xl ">{about.role}</span>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center md:gap-4 md:row-span-2 md:col-start-2">
+        <div className="flex flex-col items-center justify-center mb-5 md:gap-4 md:row-span-3 md:col-start-3">
           <img
             src={about.images.profile}
             alt={"Profile photo of " + about.name}
@@ -71,14 +71,17 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-4 gap-2 md:gap-4 md:mt-8 md:row-start-2 md:col-start-1">
-          <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-xl">{about.description}</p>
-          <div className="flex flex-col gap-3 mt-4 md:flex-row md:w-115 md:mt-10">
-            {badges.map((badge, idx) => (
-              <Badge key={idx} icon={badge.icon} text={badge.text} />
-            ))}
+        <div className="col-span-1 items-center justify-center md:pl-5 md:mt-12 md:justify-between md:row-start-2 md:row-span-2 md:col-start-1 md:col-span-2 w-full">
+          <div className="flex flex-col gap-2 md:w-120 ">
+            <p className="italic text-xs w-full border-l-3 pl-3 text-white md:text-lg">{about.description}</p>
+            <div className="flex flex-col gap-3 mt-3 md:flex-row md:w-115 md:mt-10">
+              {badges.map((badge, idx) => (
+                <Badge key={idx} icon={badge.icon} text={badge.text} />
+              ))}
+            </div>
           </div>
         </div>
+
       </div >
     </section>
   );
