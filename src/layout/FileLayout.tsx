@@ -28,7 +28,7 @@ export const FileLayout = ({
 
   return (
     <section className="relative px-4 mt-6 md:mt-0 w-full h-full mx-auto flex items-center justify-center">
-      <div className="w-full flex flex-row items-center justify-center md:flex-col-reverse md:items-center md:justify-center">
+      <div className={`w-full flex flex-row items-center justify-center md:flex-col-reverse md:items-center md:justify-center ${isLoading ? "blur-xs" : "blur-0 transition-all duration-700"}`}>
         <main className="w-full h-140 relative border border-gray-200/50 bg-gray-300/10 rounded-3xl shadow-xl shadow-gray-500/40 md:h-160 md:w-330">
           <BunnySticker />
           {children}
