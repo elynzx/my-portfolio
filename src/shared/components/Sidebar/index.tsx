@@ -11,7 +11,7 @@ interface Props {
 }
 
 const MENU_ITEMS = [
-  { id: 'hero', label: 'Hero', icon: HeroIcon },
+  { id: 'hero', label: 'Home', icon: HeroIcon },
   { id: 'about', label: 'About', icon: AboutIcon },
   { id: 'education', label: 'Education', icon: AchievementIcon },
   { id: 'achievements', label: 'Achievements', icon: EducationIcon },
