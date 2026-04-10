@@ -10,7 +10,7 @@ const about = {
   role: "Full Stack Developer Trainee",
   title: "About",
   description:
-    "I turn ideas into systems that feel clear, intuitive, and human — blending creativity from design with the discipline of engineering.",
+    "Building clear, user-centered solutions with a balance of rigor and creativity.",
   images: {
     profile: ProfilePhoto,
     hi: HiIcon,
