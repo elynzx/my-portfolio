@@ -8,4 +8,13 @@
         writing-mode: sideways-lr;
         transform: none;
     }
+
+    .hide-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
 }

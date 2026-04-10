@@ -37,14 +37,14 @@ export const Input = ({
         disabled={disabled}
         onPaste={e => e.preventDefault()}
         autoComplete="off"
-        className={`flex-1 text-xs md:text-[16px] border-b-1 border-LineDarkPink py-1.5 md:px-3 md:py-2 bg-transparent outline-none transition-colors 
+        className={`flex-1 text-xs md:text-[16px] border-b-1 border-LineDarkPink py-1 md:py-1.5 md:px-3 md:py-2 bg-transparent outline-none transition-colors 
           ${error ? 'border-darkPink border-b-2 mr-3' : ''} 
           ${disabled ? 'opacity-60 cursor-not-allowed' : ''}`}
         aria-invalid={!!error}
         aria-describedby={error ? `${name}-error` : undefined}
       />
       {error && (
-        <span id={`${name}-error`} className="text-xs text-darkPink mt-8 leading-none">
+        <span id={`${name}-error`} className="text-xs text-darkPink mt-2 md:mt-8 leading-none">
           {error}
         </span>
       )}
