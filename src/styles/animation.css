@@ -113,6 +113,16 @@
             height: 16px;
         }
     }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     /* Utility classes */
 
     .animate-galaxy {
@@ -155,6 +165,10 @@
     }
     .bar {
         animation: wave-animation 1s ease-in-out infinite;
+    }
+
+    .fadeIn {
+        animation: fade-in 0.5s ease-in-out;
     }
 
     @media (min-width: 768px) {
