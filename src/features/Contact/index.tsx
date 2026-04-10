@@ -9,7 +9,7 @@ const EMAILJS_CONFIG = {
   SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
   TEMPLATE_USER: import.meta.env.VITE_EMAILJS_TEMPLATE_USER,
   TEMPLATE_ME: import.meta.env.VITE_EMAILJS_TEMPLATE_ME,
-  PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC,
 };
 
 interface ContactData {
