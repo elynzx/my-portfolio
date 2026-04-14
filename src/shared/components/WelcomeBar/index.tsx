@@ -8,7 +8,7 @@ export const WelcomeBar = () => {
     shadow-gray-200/40 px-20 md:h-20 flex justify-between items-center " role="banner">
       <MusicPlayer />
       <p className="text-lightGray">
-        Bienvenido a mi portafolio | <Timer />
+        Welcome to my portafolio | <Timer />
       </p>
     </div>
   )
