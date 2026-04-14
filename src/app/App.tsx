@@ -4,6 +4,7 @@ import { FileLayout } from '@/layout/FileLayout'
 import type { ReactNode } from "react";
 import { Contact } from "../features/Contact";
 import { Home } from "../features/Home";
+import { WelcomeBar } from "@/shared/components";
 
 const TABS_MAP: Record<string, ReactNode> = {
   home: <Home />,
@@ -32,6 +33,7 @@ function App() {
       >
         {content}
       </FileLayout>
+      <WelcomeBar/>
     </div>
   )
 }
